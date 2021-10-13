@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b, sum, razn, pr, chast;
+    printf("Введите два числа через пробел: ");
+    scanf("%f%f", &a, &b);
+    if ((a == 0) || (b == 0))
+    {
+        printf("Ошибка: вы ввели одно или более нулевых значений.");
+    }
+    else
+    {
+        a = a * a;
+        b = b * b;
+        sum = a + b;
+        razn = a - b;
+        if (razn < 0)
+        {
+            razn = (razn * (-1));
+        }
+        pr = a * b;
+        if (a > b)
+        {
+            chast = a / b;
+        }
+        else
+        {
+            chast = b / a;
+        }
+        printf("Сумма квадратов равна: %f   Разность квадратов равна: %f    Произведение квадратов равно: %f    Частное квадратов равно: %f", sum, razn, pr, chast);
+    return 0;
+    }
+}
