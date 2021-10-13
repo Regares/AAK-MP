@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b, s, r, p, ch;
+    printf("Введите два ненулевых числа: ");
+    scanf("%f%f", &a, &b);
+    if (a < 0)
+    {
+        a = a * (-1);
+    }
+    if (b < 0)
+    {
+        b = b * (-1);
+    }
+    s = a + b;
+    if (a >= b)
+    {
+        r = a - b;
+    }
+    else
+    {
+        r = b - a;
+    }
+    p = a * b;
+    if (a >= b)
+    {
+        ch = a / b;
+    }
+    else
+    {
+        ch = b / a;
+    }
+    printf("Сумма модулей равна: %f    Разность модулей равна: %f     Произведение модулей равно: %f    Частное модулей равно: %f", s, r, p, ch);
+    return 0;
+}
